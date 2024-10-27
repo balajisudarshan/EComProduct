@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh; /* Full viewport height */
+    padding: 50px;
+    background-color: #f5f5f5; /* Light background for contrast */
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start position */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for animation */
+  }
+  
+  .heroSection.animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to final position */
+  }
+  
+  .content {
+    max-width: 50%; /* Limit width for text */
+    padding-left: 20px; /* Space between content and image */
+  }
+  
+  .content h1 {
+    font-size: 3em;
+    color: #333; /* Dark text color */
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    color: #666; /* Slightly lighter text */
+    margin: 20px 0;
+  }
+  
+  .content button {
+    padding: 10px 20px;
+    background-color: #ff7f50; /* Coral color */
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content button:hover {
+    background-color: #ff6347; /* Darker coral on hover */
+  }
+  
+  .image {
+    max-width: 40%; /* Limit image width */
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  }
+  
+  .reverse {
+    flex-direction: row-reverse; /* Reverse the order of content and image */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .heroSection {
+      flex-direction: column; /* Stack content and image on top of each other */
+      height: auto; /* Allow height to adjust */
+      padding: 20px; /* Reduce padding */
+    }
+  
+    .content {
+      max-width: 100%; /* Full width for smaller screens */
+      padding-left: 0; /* Remove left padding */
+      text-align: center; /* Center text */
+    }
+  
+    .image {
+      max-width: 100%; /* Full width for images on smaller screens */
+      margin: 20px 0; /* Add space between image and text */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2.5em; /* Smaller heading size */
+    }
+  
+    .content p {
+      font-size: 1em; /* Smaller paragraph size */
+    }
+  
+    .content button {
+      padding: 8px 16px; /* Smaller button size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 2em; /* Even smaller heading size */
+    }
+  
+    .content p {
+      font-size: 0.9em; /* Even smaller paragraph size */
+    }
+  
+    .content button {
+      padding: 6px 12px; /* Further reduce button size */
+    }
+  }
+    

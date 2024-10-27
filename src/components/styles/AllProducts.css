@@ -1,0 +1,43 @@
+.productContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  .card {
+    background-color: white; /* Card background color */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 250px; /* Fixed width for cards */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.2s; /* Smooth transform effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .card img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Border below image */
+  }
+  
+  .card h3 {
+    font-size: 1.2em; /* Adjust title font size */
+    margin: 10px; /* Margin around title */
+  }
+  
+  .card p {
+    margin: 5px 10px; /* Margin around paragraph text */
+    color: #555; /* Slightly lighter text color */
+  }
+  
+  .card .price {
+    font-weight: bold; /* Bold for price */
+    color: #ff7f50; /* Coral color for price */
+  }
+      

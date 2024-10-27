@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Honk&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    background-color: #282c34; /* Darker background for contrast */
+    padding: 2%;
+    justify-content: space-between; /* Use space-between for better spacing */
+    border-bottom: 3px solid #ff7f50; /* Coral border for a pop of color */
+}
+
+nav .logo {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffeb3b; /* Bright yellow for text */
+    transition: color 0.3s ease;
+    font-family: 'Poppins';
+    font-size: 18px; /* Adjust size for readability */
+}
+
+.nav-links a:hover {
+    color: #1e90ff; /* Bright blue on hover for better visibility */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+        align-items: center; /* Center align links */
+        margin-top: 10px; /* Space between logo and links */
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+}
