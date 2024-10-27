@@ -1,8 +1,8 @@
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Groceries from "./components/Groceries";
-import Products from "./components/Products";
-import ViewProduct from "./components/ViewProduct";
+import NavBar from "./components/NavBar.jsx";
+import Hero from "./components/Hero.jsx";
+import Groceries from "./components/Groceries.jsx";
+import Products from "./components/Products.jsx";
+import ViewProduct from "./components/ViewProduct.jsx";
  // Import ViewProduct
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ViewGrocery from "./components/viewGrocery";
