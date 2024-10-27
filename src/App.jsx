@@ -6,7 +6,7 @@ import ViewProduct from "./components/ViewProduct.jsx";
  // Import ViewProduct
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ViewGrocery from "./components/ViewGrocery.jsx";
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <Router>
@@ -19,7 +19,9 @@ function App() {
         <Route path="/productDetails/:id" element={<ViewProduct />} /> {/* Correct route for product details */}
         <Route path="/groceryDetails/:id" element={<ViewGrocery />} />
       </Routes>
+      <Analytics/>  
     </Router>
+    
   );
 }
 
