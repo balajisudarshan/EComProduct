@@ -5,7 +5,7 @@ import Products from "./components/Products.jsx";
 import ViewProduct from "./components/ViewProduct.jsx";
  // Import ViewProduct
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ViewGrocery from "./components/viewGrocery";
+import ViewGrocery from "./components/viewGrocery.jsx";
 
 function App() {
   return (
