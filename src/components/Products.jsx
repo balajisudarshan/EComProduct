@@ -14,7 +14,19 @@ const Products = () => {
       })
       .catch(error => console.error('Error fetching products:', error));
   }, []); // Add an empty dependency array
-
+  if (products.length === 0) {
+    return (
+      <div className="loading-container"> {/* New wrapper for centering */}
+        <div className="loading-wave">
+          <div className="loading-bar"></div>
+          <div className="loading-bar"></div>
+          <div className="loading-bar"></div>
+          <div className="loading-bar"></div>
+        </div>
+      </div>
+    );
+  }
+  
   return (
     <div className='productContainer'>
       {products.map((item) => (

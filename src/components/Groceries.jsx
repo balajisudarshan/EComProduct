@@ -18,8 +18,38 @@ const Groceries = () => {
 
   // Check if products array is empty
   if (products.length === 0) {
-    return <h1>Loading ...</h1>;
+    return (
+      <div className="loading-container"> {/* New wrapper for centering */}
+        <div className="boxes">
+          <div className="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    );
   }
+  
 
   return (
     <div className="productContainer">

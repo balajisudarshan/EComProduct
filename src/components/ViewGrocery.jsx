@@ -16,7 +16,14 @@ const ViewGrocery = () => {
     }, [id]);
   
     if (!product) {
-      return <div>Loading...</div>; // Display a loading message while fetching
+      return (/* From Uiverse.io by mrpumps31232 */ 
+        <div class="loading-wave">
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+        </div>
+        ) // Display a loading message while fetching
     }
   
     return (
